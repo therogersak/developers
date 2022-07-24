@@ -1,0 +1,25 @@
+.skill__container{
+    height: 6px;
+    border-radius: 30px;
+    background: var(--color-3);
+    box-shadow: 0 2px 5px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.skill_name{
+    position: absolute;
+    top: -30px;
+    left: 3px;
+    font-weight: 500;
+}
+
+
+
+.skill span{
+    margin-left: auto;
+    position: absolute;
+    top: -30px;
+    right: 3px;
+    font-size: 20px;
+}

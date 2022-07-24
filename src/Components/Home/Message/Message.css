@@ -1,0 +1,94 @@
+.message {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  right: 1rem;
+  max-width: 450px;
+  height: 500px;
+  box-shadow: 0 2px 5px;
+  border-radius: 10px;
+  display: none;
+  z-index: 1100;
+  background: rgba(6, 6, 6, 0.47);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.message_show {
+  display: flex;
+}
+
+.close{
+    margin-left: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.close .MuiSvgIcon-root {
+  font-size: 25px;
+  color: #fff;
+}
+
+.message__mid {
+  border-top: 1px solid rgb(188, 188, 188);
+  border-bottom: 1px solid rgb(206, 204, 204);
+  height: 400px;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+
+.message__input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.message__input input {
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: 400;
+  border: none;
+  padding-left: 8px;
+  color: #fff;
+}
+
+.message__input input::placeholder{
+  color: #fff;
+}
+.message__reciver{
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.message__reciver .MuiAvatar-root{
+    width: 45px;
+    height: 45px;
+}
+
+.message__reciver .message__box span{
+    font-size: 14px;
+}
+.message__reciver .message__box p{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.message__mid .message__sender{
+    margin: 10px 0;
+    margin-left: auto;
+    width: fit-content;
+}
+.message .message__sender .message__box{
+    margin-left: auto;
+}
