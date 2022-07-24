@@ -16,6 +16,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
+  color: var(--color-2);
 }
 
 .home__top .MuiAvatar-root {
@@ -29,6 +30,7 @@
 .home__top .user__info {
   max-width: 400px;
   text-align: center;
+  color: var(--color-2);
 }
 
 .home__top .user__accounts {
@@ -74,6 +76,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  color: var(--color-2);
 }
 
 .home__bottom button {
@@ -84,13 +87,14 @@
   font-weight: bold;
   font-size: 16px;
   transition: 0.3s;
-  color: var(--color-2);
+  color: var(--color-5);
   cursor: pointer;
   box-shadow: #222 0 2px 5px;
 }
 
 .home__bottom button:hover {
   box-shadow: var(--color-4) 0 2px 10px;
+  color: var(--color-2);
 }
 
 .home__bottom .contact {
@@ -101,17 +105,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-3);
   transition: 0.2s;
   border-radius: 5px;
+  background: var(--color-3);
+  box-shadow: #222 0 0px 1px;
 }
 
 .home__bottom .contact__box .contact:hover {
-  box-shadow: 0 0px 1px;
+  box-shadow: var(--color-2) 0 0px 1px;
   border: 1px solid #eaeaea;
 }
 
-.home__bottom .contact .MuiSvgIcon-root {
+.home__bottom .contact__box .contact .MuiSvgIcon-root {
   color: var(--color-5);
 }
 
@@ -155,30 +160,37 @@
 .home__bottom_btn{
   width: 100%;
   max-width: 350px;
-  height: 50px;
-  background: var(--color-3);
+  height: 55px;
+  background: var(--color-5);
   display: flex;
   align-items: center;
   gap: 15px;
   border-radius: 5px;
   z-index: 1;
+  padding: 4px;
 }
 
 .home__bottom_btn .link{
   width: 100%;
   height: 100%;
   text-decoration: none;
+  z-index: -1;
+  color: var(--color-5);
 }
 .home__bottom_btn .MuiButton-root{
   width: 100%;
   height: 100%;
   font-family: Montserrat;
   font-weight: bold;
-  z-index: 1;
   border: none;
+  background: var(--color-5);
 }
 
 .home__bottom_btn .active{
-  background: var(--color-5);
+  background: var(--color-2);
   color: red;
+}
+
+.home a{
+  color: var(--color-5);
 }

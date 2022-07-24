@@ -1,8 +1,7 @@
 .header {
   width: 100%;
-  background: rgba(255, 255, 255, 0.675);
   backdrop-filter: blur(10px);
-  padding: 8px 10px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -15,41 +14,14 @@
   gap: 10px;
 }
 
-.header__right .search__bar {
-  width: 200px;
-  padding: 6px 8px;
-  max-width: 200px;
-  cursor: pointer;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  max-width: 200px;
-  background: var(--color-3);
-}
-
-.search__bar .MuiSvgIcon-root {
-  font-size: 25px;
-}
-
-.search__bar span{
-    font-weight: 300px;
-    font-size: 14px;
-    padding-left: 5px;
-}
-
-.search__bar button {
-    margin-left: auto;
-  border: var(--color-4) 1px solid;
-  padding: 4px;
-  border-radius: 5px;
-  cursor: pointer;
-  background: var(--color-2);
-  font-weight: bold;
-  font-family: Montserrat;
+.header__right a{
+  text-decoration: none;
+  color: var(--color-5);
 }
 
 .header__right .MuiSvgIcon-root{
     cursor: pointer;
+    color: var(--color-2);
 }
 
 .logo h3 {

@@ -5,6 +5,7 @@ import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutl
 import { Avatar } from "@mui/material";
 import db from "../../../Firebase/firebase";
 import firebase from "firebase/compat/app";
+import User from "./User/User";
 function Message({ show, setShow }) {
   const [message, setMessage] = useState("");
   const [data, setData] = useState([]);
@@ -12,7 +13,7 @@ function Message({ show, setShow }) {
   const messageHandler = (e) => {
     e.preventDefault();
     db.collection("chat").add({
-      name: "default",
+      name: "User",
       message: message,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
@@ -22,7 +23,7 @@ function Message({ show, setShow }) {
 
   useEffect(() => {
     db.collection("chat")
-      .orderBy('timestamp', "desc")
+      .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
         setData(
           snapshot.docs.map((doc) => ({
@@ -38,27 +39,14 @@ function Message({ show, setShow }) {
     <>
       <div className={show ? "message message_show" : "message"}>
         <div className="close" onClick={() => setShow(false)}>
+
           <CloseOutlinedIcon />
         </div>
-        <div className="message__mid">
-          <div className="message__reciver">
-            <Avatar />
-            <div className="message__box">
-              <span>The Rogers ak</span>
-              <p>Hello Guys</p>
-            </div>
-          </div>
 
+        <div className="message__mid">
           {data &&
             data.map((data) => (
-              <div className="message__reciver message__sender">
-
-                <div className="message__box">
-                  <span>{data.data.name}</span>
-                  <p>{data.data.message}</p>
-                </div>
-                <Avatar />
-              </div>
+              <User message={data.data.message} name={data.data.name} />
             ))}
         </div>
 

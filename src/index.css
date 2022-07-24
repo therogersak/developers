@@ -4,14 +4,15 @@ body {
   font-family: Montserrat;
   font-weight: bold;
   box-sizing: border-box;
-  transition: .2s;
+  transition: 0.2s;
+  background: var(--color-5);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: .2s;
+  transition: 0.2s;
   user-select: none;
   margin: 0;
   padding: 0;
@@ -46,4 +47,11 @@ input {
   --color-3: #eef1f4;
   --color-4: #44a0fd;
   --color-5: #1a2027;
+}
+
+.dark {
+  --color-1: var(--color-3);
+  --color-2: var(--color-5);
+  --color-3: var(--color-2);
+  --color-5: var(--color-2);
 }

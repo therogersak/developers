@@ -1,5 +1,5 @@
 .message {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 1rem;
   right: 1rem;
@@ -60,6 +60,10 @@
   color: #fff;
 }
 
+.message__input .MuiSvgIcon-root{
+  color: #fff;
+}
+
 .message__input input::placeholder{
   color: #fff;
 }
@@ -68,6 +72,7 @@
     margin-right: auto;
     align-items: center;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .message__reciver .MuiAvatar-root{
@@ -81,8 +86,12 @@
 .message__reciver .message__box p{
     font-weight: 300;
     font-size: 13px;
+    color: rgb(235, 235, 235);
 }
 
+.message__reciver .message__box span{
+  color: var(--color-2);
+}
 
 .message__mid .message__sender{
     margin: 10px 0;
