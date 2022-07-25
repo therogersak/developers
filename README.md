@@ -1,11 +1,11 @@
 <br />
 <p align="center">
-    <a href="https://therogersak.github.io/netflix_clone_with_react_js/"><img src="https://github.com/therogersak/netflix_clone/blob/main/netflix_clone.png?raw=true" alt="Logo" width="100%"></a>
+    <a href="https://therogersak.github.io/netflix_clone_with_react_js/"><img src="https://github.com/therogersak/devloper-portfolio/blob/main/therogersak.gif?raw=true" alt="Logo" width="100%"></a>
 </p>
 
 
 <p align="center">
-    Netflix homepage clone using React JS.
+    Devloper Portfolio homepage clone using React JS.
     <br />
     <br />
 </p>
@@ -18,10 +18,10 @@ With the terminal available, follow the instructions below:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/therogersak/netflix_clone_with_react_js
+$ git clone https://github.com/therogersak/devloper-portfolio
 
-# Access the netflix-clone folder
-$ cd netflix_clone_with_react_js
+# Access the devloper-portfolio folder
+$ cd devloper-portfolio
 
 # Install dependencies
 $ npm install
@@ -33,7 +33,7 @@ $ npm start
 ```
 ### Observation
 
-To use themoviedb.org API, you must register and obtain an access key, which is necessarily used in the application.
+To use firebase you must register, which is necessarily used in the application.
 
 
 ## Contact
