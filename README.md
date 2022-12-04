@@ -5,7 +5,7 @@
 
 
 <p align="center">
-    Devloper Portfolio homepage clone using React JS.
+    Find Devlopers Portfolio using React JS.
     <br />
     <br />
 </p>
@@ -18,10 +18,10 @@ With the terminal available, follow the instructions below:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/therogersak/devloper-portfolio
+$ git clone https://github.com/therogersak/devlopers
 
-# Access the devloper-portfolio folder
-$ cd devloper-portfolio
+# Access the devlopers folder
+$ cd devlopers
 
 # Install dependencies
 $ npm install
